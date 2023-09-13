@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es-ES">
+
+<head>
+  <title>Convert Image Format</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <div class="container d-flex justify-content-center align-items-center my-5">
+      <div id="cDemo" class="text-center rounded">
+        <div class="mb-3">
+          <label for="" class="form-label">Formatos</label>
+          <select class="form-select form-select-lg" name="cFormat" id="cFormat">
+            <option value="jpeg" selected>JPG</option>
+            <option value="png">PNG</option>
+            <option value="gif">GIF</option>
+            <option value="webp">WEBP</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Archivo</label>
+          <input type="file" class="form-control" id="cFile" accept="image/*" placeholder="" aria-describedby="fileHelpId" onchange="leerImage()">
+        </div>
+        <div class="row justify-content-center rounded border mb-3" >
+          <label>Previsualización</label>
+          <canvas id="cCanvas"></canvas>
+        </div>
+        <div class="mb-3">
+          <div class="d-grid gap-2">
+            <button type="button" name="converterButton" id="converterButton" onclick="convertir()" class="btn boton-convertir">Convertir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+</html>

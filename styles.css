@@ -1,0 +1,28 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+#cDemo {
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #eee;
+  background: #f2f2f2;
+}
+
+label {
+  margin: 10px 0;
+  font-weight: 700;
+  color: #7f5a83;
+}
+#cCanvas{
+  width: 500px;
+}
+
+body {
+  background-color: #0d324d;
+}
+
+.boton-convertir{
+  background-color: #7f5a83;
+  color: #eee;
+}
